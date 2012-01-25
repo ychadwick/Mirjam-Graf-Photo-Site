@@ -1,0 +1,37 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+
+category_show_user:
+  url: /:sf_culture/:section_slug/:slug
+  class: sfDoctrineRoute
+  options: { model: Category, type: object, method: doSelectForSlug }
+  param: { module: portfolio, action: showCategory }
+  requirements: { section_slug: .+, category_slug: .+, id: \d+, sf_culture: (?:de|en) }
+
+change_language:
+  url: /:sf_culture/change_language
+  with_wildcard_routes: true
+  param: { module: language, action: changeLanguage }
+
+contact:
+  url:   /:sf_culture/contact
+  param: { module: contact, action: index }
+  requirements:
+    sf_culture: (?:de|en)
+
+localized_homepage:
+  url:   /:sf_culture/*
+  param: { module: portfolio, action: index }
+  requirements:
+    sf_culture: (?:de|en)
+# default rules
+homepage:
+  url:   /
+  param: { module: portfolio, action: index }
+  requirements:
+    sf_culture: (?:de|en)
+
+# generic rules
+# please, remove them by adding more specific rules
+

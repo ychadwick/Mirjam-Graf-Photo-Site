@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="de" datatype="plaintext" original="messages" date="2010-11-22T16:06:50Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>User list</source>
+        <target>Benutzerliste</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Editing User "%%username%%"</source>
+        <target>Benutzer "%%username%%" bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>New User</source>
+        <target>Neue Benutzer</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Password (again)</source>
+        <target>Passwort (wiederholen)</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>sign in</source>
+        <target>einloggen</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Forgot your password?</source>
+        <target>Passwort vergessen?</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Remember</source>
+        <target>Angemeldet bleiben</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Username or E-Mail</source>
+        <target>Benutzername</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Sort photos</source>
+        <target>Fotos sortieren</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Edit Category</source>
+        <target>Kategorie bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Sort categories</source>
+        <target>Kategorien sortieren</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Back to list</source>
+        <target>Zurück zur Liste</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>Sort sections</source>
+        <target>Sektionen sortieren</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>Edit Section</source>
+        <target>Sektion bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Sort order saved</source>
+        <target>Sortierung gespeichert</target>
+      </trans-unit>
+      <trans-unit id="18">
+        <source>Photo Manager</source>
+        <target>Fotomanager</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Category Manager</source>
+        <target>Kategoriemanager</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Section Manager</source>
+        <target>Sektionmanager</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Users</source>
+        <target>Benutzermanager</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Title</source>
+        <target>Titel</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Category</source>
+        <target>Kategorie</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Section</source>
+        <target>Sektion</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>Image</source>
+        <target>Foto</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>Caption</source>
+        <target>Subtitel</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>Content</source>
+        <target>Intro</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>Logout</source>
+        <target>Abmelden</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>yes or no</source>
+        <target>ja oder nein</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>yes</source>
+        <target>ja</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>no</source>
+        <target>nein</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Edit Photo</source>
+        <target>Foto bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="23">
+          <source>is empty</source>
+          <target>Ist leer</target>
+      </trans-unit>
+      <trans-unit id="24">
+          <source>Photo List</source>
+          <target>Fotoliste</target>
+      </trans-unit>
+      <trans-unit id="25">
+          <source>Category List</source>
+          <target>Kategorieliste</target>
+      </trans-unit>
+      <trans-unit id="26">
+          <source>Section List</source>
+          <target>Sektionliste</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

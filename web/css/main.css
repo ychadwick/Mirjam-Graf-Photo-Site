@@ -1,0 +1,120 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 0.85em;
+    font-family:  'Times New Roman',times,serif;
+    padding: 30px;
+    margin:0;
+}
+
+#content {
+    width: 1024px;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0 auto;
+}
+#headerLeft{
+    float: right;
+    width: 150px;
+    height: 50px;
+    vertical-align: text-bottom;
+    text-align: left;
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: right;
+}
+.cleaner{
+    float: none;
+}
+a img{
+    text-decoration: none;
+    border: none;
+}
+a.noLink, a:hover.noLink, a:visited.noLink, a:active.noLink {
+    color: #000000;
+}
+h1.section{
+    font-weight: normal;
+    font-size: 1em;
+    font-style: italic;
+    padding:0;
+    margin:0;
+    height: 1.5em;
+}
+h1.sectionCategory{
+    font-weight: normal;
+    font-size: 1em;
+    font-style: italic;
+    padding:0;
+    margin:0;
+    height: 1.5em;
+    display: inline
+}
+h2.category{
+    font-weight: normal;
+    font-size: 1em;
+    display: inline;
+}
+#left {
+    float: left;
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+}
+#right {
+    float: right;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+}
+#categoryContent {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0 200px;
+    text-align: center;
+}
+#categoryContent img{
+    margin-bottom: 10px;
+}
+.counter{
+    float: right;
+    text-align: right;
+    width: 100px;
+}
+.innerHeader{
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+#contactImage {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0 200px;
+    text-align: right;
+}
+#addressBlock{
+    padding-left: 5.6em;
+}
+.mailto{
+    font-style: italic;
+    font-size: .9em;
+}
+.photoBox{
+    display: inline-block;
+    height: 200px;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+.photoBoxHeader{
+    display: inline-block;
+    height: 220px;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+.photoBoxInner {
+    height: 200px;
+    bottom: 0px;
+}
+.sf_admin_content{
+    width: 700px;
+}

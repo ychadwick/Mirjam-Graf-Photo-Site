@@ -1,0 +1,42 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  sf_guard_plugin:
+    routes_register: false
+
+  menu_items:
+    root:
+      text:     'Photo Manager'
+      link:     '@homepage'
+      module:   ['photo']
+    category:
+      text:    'Category Manager'
+      link:    '@category'
+      module:   ['category']
+    section:
+      text:    'Section Manager'
+      link:    '@section'
+      module:   ['section']
+    users:
+      text:    'Users'
+      link:    '@sf_guard_user'
+      module:   'sf_guard_user'
+      allow:		['admin']
+    user_list:
+      text:    'User list'
+      link:    '@sf_guard_user'
+      module:   ['sf_guard_user']
+    user_groups:
+      text:     'Group list'
+      link:     '@sf_guard_group'
+      module:   ['sfGuardGroup']
+    user_permissions:
+      text:     'Permission list'
+      link:     '@sf_guard_permission'
+      module:   ['sfGuardPermission']
+    logout:
+      text:			'Logout'
+      link:     '@logout'
+      module:   ['sfGuardPermission']

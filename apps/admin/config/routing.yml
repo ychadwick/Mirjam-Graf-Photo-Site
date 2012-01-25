@@ -1,0 +1,102 @@
+section:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                section
+    module:               section
+    prefix_path:          /:sf_culture/section
+    column:               id
+    with_wildcard_routes: true
+
+category:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                category
+    module:               category
+    prefix_path:          /:sf_culture/category
+    column:               id
+    with_wildcard_routes: true
+
+photo:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                photo
+    module:               photo
+    prefix_path:          /:sf_culture/photo
+    column:               id
+    with_wildcard_routes: true
+
+
+sf_guard_user:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardUser
+    module:               sf_guard_user
+    prefix_path:          /:sf_culture/users
+    column:               id
+    with_wildcard_routes: true
+  requirements:
+    sf_culture: (?:de|en)
+# default rules
+sf_guard_signin:
+  url:   /:sf_culture/login
+  param: { module: sfGuardAuth, action: signin }
+  requirements:
+    sf_culture: (?:de|en)
+
+logout:
+  url:   /:sf_culture/logout
+  param: { module: sfGuardAuth, action: signout }
+  requirements:
+    sf_culture: (?:de|en)
+
+sf_guard_password:
+  url:   /:sf_culture/request_password
+  param: { module: sfGuardAuth, action: forgotPassword }
+  requirements:
+    sf_culture: (?:de|en)
+
+sf_guard_group:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardGroup
+    module:               sfGuardGroup
+    prefix_path:          /:sf_culture/group
+    column:               id
+    with_wildcard_routes: true
+  requirements:
+    sf_culture: (?:de|en)
+
+sf_guard_permission:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardPermission
+    module:               sfGuardPermission
+    prefix_path:          /:sf_culture/permission
+    column:               id
+    with_wildcard_routes: true
+  requirements:
+    sf_culture: (?:de|en)
+
+change_language:
+  url: /:sf_culture/change_language
+  param: { module: language, action: changeLanguage }
+
+# default rules
+homepage:
+  url:   /
+  param: { module: photo, action: index }
+  requirements:
+    sf_culture: (?:de|en)
+
+empty_homepage:
+  url:  /
+  param: { module: password, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:sf_culture/:module
+  param: { action: index }
+
+default:
+  url:   /:sf_culture/:module/:action/*
