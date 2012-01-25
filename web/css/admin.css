@@ -1,0 +1,108 @@
+/* 
+    Document   : admin
+    Created on : Aug 3, 2010, 4:37:49 PM
+    Author     : yorkie
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+.labelNoFloat label{
+    float: none !important;
+    display: inline !important;
+}
+
+html {
+    padding:0px;
+    margin:0px;
+    height:100%;
+}
+
+body{
+    padding: 10px 20px;
+    height:100%;
+
+}
+#dialog {
+    width:126px;
+    height:22px;
+}
+
+.window {
+    position:absolute;
+    width:440px;
+    height:200px;
+    display:none;
+    z-index:9999;
+    padding:20px;
+}
+#leftnav {
+    position: absolute;
+    width:  180px;
+    padding: 10px;
+    border: 1px solid #DEDEDE;
+    height: 90%;
+}
+#maincontent {
+    margin-left:215px;
+    border: 1px solid #DEDEDE;
+    padding: 10px;
+    min-height: 90%;
+    height: auto;
+}
+#sf_admin_bar {
+    width: 400px;
+    right : 0px;
+}
+.sf_admin_filter table{
+    width: 400px;
+}
+
+select, input, textarea, button {
+    max-width: 250px
+}
+#topnav{
+    margin-bottom: 30px;
+    padding:5px;
+    border:solid 1px #dedede;
+    background:#fff;
+}
+#breadCrumb a, a.link{
+    color:#464646;
+    text-decoration:none;
+}
+#sf_admin_container table.mceLayout tr{
+    background: none !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+
+#login label {
+	width: 10em !important;
+}
+#sf_admin_container label {
+	width: 6em !important;
+}
+
+
+#sf_admin_container table.mceLayout td{
+    background: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    text-align: center !important;
+}
+
+#sf_admin_container table.mceLayout tr.mceFirst td, #sf_admin_container table.mceLayout tr.mceLast td{
+
+  border-bottom: 1px solid #ddd !important;
+  border-top: 1px solid #ddd !important;
+}
+.sortable { list-style-type: none !important; margin: 0; padding: 0; width: 60%; }
+.sortable li { list-style-type: none !important; margin: 0 5px 5px 5px; padding: 5px; }
+html>body .sortable li { height: 1.5em; line-height: 1.2em; }
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+html>body .sortable li.sortPhoto { height: 50px !important; line-height: 1.2em; }
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; }

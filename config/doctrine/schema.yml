@@ -1,0 +1,36 @@
+Photo:
+  actAs: { Timestampable: ~ }
+  columns:
+    title: { type: varchar(255), notnull: true }
+    image: { type: varchar(255), notnull: true }
+    caption: { type: varchar(3000)}
+    category_id:  { type: integer, notnull: true }
+    sort_order: {type: integer}
+  relations:
+    Category: { onDelete: CASCADE, local: category_id, foreign: id, foreignAlias: Photos }
+
+Category:
+  actAs:
+    I18n:
+      fields: [title, content]
+      actAs:
+        Sluggable: { fields: [title], uniqueBy: [lang, title], canUpdate: true  }
+  columns:
+    
+    title: { type: varchar(255), notnull: true }
+    content: string(3000)
+    section_id:  { type: integer, notnull: true }
+    sort_order: {type: integer}
+  relations:
+    Section: { onDelete: CASCADE, local: section_id, foreign: id, foreignAlias: Categories }
+
+Section:
+  actAs:
+    I18n:
+      fields: [title]
+      actAs:
+        Sluggable: { fields: [title], uniqueBy: [lang, title], canUpdate: true }
+  columns:
+    title: { type: varchar(255), notnull: true }
+    online: {type: boolean}
+    sort_order: {type: integer}
